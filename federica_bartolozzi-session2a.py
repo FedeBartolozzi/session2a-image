@@ -10,7 +10,7 @@ newsize1 = (400, 300)
 newsize2 = (300, 400)
 for item in dirs:
     img = Image.open(path+item)
-    h, w = img.size
+    w, h = img.size
     if w > h:
         new_w = (4 / 3) * h
         cut_img = img.crop((0, 0, new_w, h))
